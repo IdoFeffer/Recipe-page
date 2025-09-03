@@ -1,0 +1,54 @@
+:root {
+  /* ===== Base palette ===== */
+  --rose-800: #7a284e;
+  --rose-50: #fff7fb;
+
+  --stone-900: #312e2c;
+  --stone-600: #5f564d;
+  --stone-150: #e3ddd7;
+  --stone-100: #f3e5d7;
+
+  --brown-800: #854632;
+
+  --white: #ffffff;
+
+  /* ===== Font families ===== */
+  --ff-serif: 'Young Serif', serif;
+  --ff-fraunces: "Fraunces", serif;
+  --ff-montserrat: "Montserrat", sans-serif;
+
+  /* ===== text-preset-1 ===== */
+  --fs-preset-1: 40px;
+  /* --lh-preset-1: 100%; */
+  /* --ls-preset-1: 0px; */
+  --fw-preset-1: 700; /* Fraunces Bold */
+
+  /* ===== text-preset-2 ===== */
+  --fs-preset-2: 28px;
+  /* --lh-preset-2: 100%; */
+  /* --ls-preset-2: 0px; */
+  --fw-preset-2: 700; /* Montserrat Bold */
+
+  /* ===== text-preset-3 ===== */
+  --fs-preset-3: 20px;
+  /* --lh-preset-3: 100%; */
+  /* --ls-preset-3: 0px; */
+  --fw-preset-3: 500; /* Montserrat Medium */
+
+  /* ===== text-preset-4 ===== */
+  --fs-preset-4: 16px;
+  --lh-preset-4: 150%;
+  /* --ls-preset-4: 0px; */
+  --fw-preset-4: 400; /* Montserrat Regular */
+
+
+  /* ===== Spacing scale ===== */
+  --space-1600: 128px;
+  --space-600: 48px;
+  --space-500: 40px;
+  --space-400: 32px;
+  --space-300: 24px;
+  --space-200: 16px;
+  --space-150: 12px;
+  --space-100: 8px;
+}
