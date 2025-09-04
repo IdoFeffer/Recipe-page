@@ -1,35 +1,35 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   background-color: var(--stone-100);
+  min-height: 100vh;
   display: grid;
   place-items: center;
 }
 
 .main-card {
+  display: flex;
+  flex-direction: column;
   background-color: var(--white);
   border-radius: 24px;
-  margin-top: var(--space-1600);
-  margin-bottom: var(--space-1600);
-  border-radius: 24px;
+  max-width: 736px;
+  width: 100%;
+  padding: var(--space-500);
+  gap: var(--space-400);
+  margin-block: var(--space-1600);
 }
 
-/* Image  */
 img {
-  height: 300px;
-  width: 656px;
+  display: block;
+  width: 100%;
+  height: auto;
   border-radius: 12px;
 }
-.img-div {
-  margin-bottom: var(--space-500);
-}
 
-/* Title  */
+/* Header  */
 .title-recipe {
   font-family: var(--ff-serif);
-  font-weight: var(--fw-preset-4);
+  font-size: var(--fs-preset-1);
+  line-height: var(--lh-preset-1);
+  font-weight: 400;
 }
 .p-header {
   color: var(--stone-600);
@@ -39,48 +39,47 @@ img {
 /* Preparation  */
 .prep {
   background-color: var(--rose-50);
-  display: flex;
-  flex-direction: column;
+  border-radius: 12px;
+  padding: var(--space-300);
 }
-.title-prep {
-  color: var(--rose-800);
-  font-family: var(--ff-montserrat);
-  font-size: var(--fs-preset-3);
-}
-.ul-prep {
-  color: var(--stone-600);
+
+/* רשימות – יישור לקו הכותרות */
+.ul-prep,
+.ul-ing,
+.ol-ins {
+  margin: 0;
+  padding-left: 1.5rem; /* או 0 אם תרצה בדיוק על הקו */
   line-height: var(--lh-preset-4);
-  padding-left: 1.5rem;
-  margin-block-start: 0;
-  margin-block-end: 0;
-}
-.ul-prep > li {
-  font-family: var(--ff-montserrat);
-  padding-left: var(--space-100);
-}
-
-/* Ingredients  */
-.title-ing {
-  color: var(--brown-800);
-  font-size: var(--fs-preset-3);
-  font-weight: var(--fw-preset-2);
-  margin-top: var(--space-400);
-  margin-bottom: var(--space-300);
-}
-
-.ul-ing {
   color: var(--stone-600);
-  line-height: var(--lh-preset-4);
-  padding-left: 1rem;
 }
 
-/* Instruction  */
-.title-ins {
+/* Titles  */
+.title-ing,
+.title-ins,
+.title-nut {
   color: var(--brown-800);
+  font-family: var(--ff-serif);
+  font-size: var(--fs-preset-3);
+  font-weight: 700;
 }
 
-.title-ins > li {
-  padding-left: 1rem;
+/* Table  */
+.table-nut {
+  width: 100%;
+  border-collapse: collapse;
 }
-
-/* Nutrition  */
+.table-nut td {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--stone-150);
+}
+.table-nut td:first-child {
+  color: var(--stone-600);
+}
+.table-nut td:last-child {
+  color: var(--brown-800);
+  font-weight: 700;
+  text-align: right;
+}
+.p-nut {
+  margin: var(--space-300) 0;
+}
